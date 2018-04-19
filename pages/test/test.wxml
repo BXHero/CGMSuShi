@@ -1,0 +1,7 @@
+<view>
+  <input class='no1' bindinput='onInput' placeholder='输入你的名字'></input>
+  <view class='pk'>配对</view>
+  <input class='no1' bindinput='onInput2' placeholder='输入对方的名字'></input>
+  <button class='no2' bindtap="onClick"> 开始</button>
+  <text>{{returnString}}</text>
+</view>

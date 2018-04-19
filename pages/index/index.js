@@ -5,8 +5,6 @@ const app = getApp()
 
 Page({
   data: {
-    slider:[],
-    swiperCurrent:0,
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
@@ -25,9 +23,6 @@ Page({
       }
     })
     console.log('index onLoad');
-    var that = this;
-
-
     if (app.globalData.userInfo) {
       that.setData({
         userInfo: app.globalData.userInfo,
@@ -55,11 +50,6 @@ Page({
       })
     };
 
-    util.getRecommend(function (data) {
-      this.setData({
-        slider: data.data.slide
-      })
-    });
   },
   getUserInfo: function(e) {
     console.log(e)
